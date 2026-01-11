@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbul FÜHREN - Lecție</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+            line-height: 1.6;
+            color: #1f2937;
+        }
+
+        /* Header și Navigare */
+        .header {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .butterfly {
+            font-size: 45px;
+        }
+
+        .brand-name {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0 20px;
+        }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background: white;
+            color: #10b981;
+            transform: translateY(-2px);
+        }
+
+        /* Container principal */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Secțiuni */
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            color: #10b981;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Dropdown */
+        .dropdown {
+            background: #f0fdf4;
+            border: 2px solid #10b981;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .dropdown-header {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-header:hover {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+        }
+
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+            font-size: 20px;
+        }
+
+        .dropdown-header.active .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 20px;
+        }
+
+        .dropdown-content.active {
+            max-height: 2000px;
+            padding: 20px;
+        }
+
+        /* Audio button */
+        .audio-btn {
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .audio-btn:hover {
+            background: #059669;
+            transform: scale(1.05);
+        }
+
+        /* Tabel */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px; /* Force horizontal scroll on mobile */
+        }
+
+        th {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        td:first-child {
+            font-weight: 600;
+            color: #10b981;
+        }
+
+        tr:hover {
+            background: #f7fafc;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Liste */
+        .content-list {
+            margin: 15px 0;
+        }
+
+        .content-list li {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .german-text {
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        .example {
+            color: #6b7280;
+            font-style: italic;
+            margin-left: 10px;
+        }
+
+        /* Exerciții */
+        .exercise-box {
+            background: #f0fdf4;
+            border: 2px solid #10b981;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .exercise-title {
+            color: #10b981;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            margin: 15px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+        }
+
+        .input-field {
+            width: 200px;
+            padding: 8px;
+            border: 2px solid #10b981;
+            border-radius: 6px;
+            font-size: 14px;
+            margin: 0 5px;
+        }
+
+        .btn-check {
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-check:hover {
+            background: #059669;
+            transform: translateY(-2px);
+        }
+
+        .btn-reset {
+            background: #6b7280;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-reset:hover {
+            background: #4b5563;
+            transform: translateY(-2px);
+        }
+
+        .feedback {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: none;
+        }
+
+        .feedback.correct {
+            background: #d1fae5;
+            color: #065f46;
+            border: 2px solid #10b981;
+            display: block;
+        }
+
+        .feedback.incorrect {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 2px solid #ef4444;
+            display: block;
+        }
+
+        /* Scroll to top button */
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .scroll-top-btn.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 24px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .nav-btn {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            .input-field {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo-section">
+            <span class="butterfly">ʚଓ</span>
+            <span class="brand-name">Claudia Toth</span>
+        </div>
+        <div class="title">Verbul FÜHREN</div>
+        <div class="nav-container">
+            <button class="nav-btn" onclick="scrollToSection('teoria')">Teoria</button>
+            <button class="nav-btn" onclick="scrollToSection('ex1')">Exercițiul 1</button>
+            <button class="nav-btn" onclick="scrollToSection('ex2')">Exercițiul 2</button>
+            <button class="nav-btn" onclick="scrollToSection('ex3')">Exercițiul 3</button>
+            <button class="nav-btn" onclick="window.location.href='flashcards.html'">Flashcards</button>
+            <button class="nav-btn" onclick="downloadPDF()">PDF</button>
+        </div>
+    </div>
+
+    <!-- Container principal -->
+    <div class="container">
+        
+        <!-- TEORIA -->
+        <div id="teoria" class="section">
+            <div class="section-title">1. TEORIA</div>
+
+            <!-- Conjugare -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>1. Conjugarea verbului FÜHREN</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Verbul "führen"</strong> este un verb regulat în limba germană și formează Perfekt-ul cu auxiliarul <strong>"haben"</strong>.</p>
+                    
+                    <div class="table-wrapper">
+                        <table>
+                            <tr>
+                                <th>Pronume</th>
+                                <th>Präsens</th>
+                                <th>Präteritum</th>
+                                <th>Perfekt</th>
+                            </tr>
+                            <tr>
+                                <td><strong>ich</strong></td>
+                                <td>führe</td>
+                                <td>führte</td>
+                                <td>habe geführt</td>
+                            </tr>
+                            <tr>
+                                <td><strong>du</strong></td>
+                                <td>führst</td>
+                                <td>führtest</td>
+                                <td>hast geführt</td>
+                            </tr>
+                            <tr>
+                                <td><strong>er/sie/es</strong></td>
+                                <td>führt</td>
+                                <td>führte</td>
+                                <td>hat geführt</td>
+                            </tr>
+                            <tr>
+                                <td><strong>wir</strong></td>
+                                <td>führen</td>
+                                <td>führten</td>
+                                <td>haben geführt</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ihr</strong></td>
+                                <td>führt</td>
+                                <td>führtet</td>
+                                <td>habt geführt</td>
+                            </tr>
+                            <tr>
+                                <td><strong>sie/Sie</strong></td>
+                                <td>führen</td>
+                                <td>führten</td>
+                                <td>haben geführt</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <button class="audio-btn" onclick="playAudio('audio/conjugare_fuehren.mp3')">
+                        🔊 Ascultă conjugarea
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sensuri principale -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>2. Sensuri principale ale verbului FÜHREN</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul class="content-list">
+                        <li><span class="german-text">a conduce, a dirija</span> <span class="example">– Der Manager führt das Team. (Managerul conduce echipa.)</span></li>
+                        <li><span class="german-text">a duce, a călăuzi</span> <span class="example">– Der Weg führt zum See. (Drumul duce la lac.)</span></li>
+                        <li><span class="german-text">a purta, a avea (la magazin)</span> <span class="example">– Dieser Laden führt Bioprodukte. (Acest magazin are produse bio.)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- VERBE SEPARABILE -->
+        <div class="section">
+            <div class="section-title">2. VERBE CU PREFIXE SEPARABILE (13 verbe)</div>
+            <p style="margin-bottom: 20px;"><strong>Prefixele separabile</strong> se despart de verbul principal în Präsens și Präteritum și se plasează la sfârșitul propoziției.</p>
+
+            <!-- abführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.1 abführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a duce pe cineva (arestat); a plăti taxe</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Die Polizisten führten den Einbrecher in Handschellen ab. <span class="example">(Polițiștii l-au dus pe spărgător încătușat.)</span></li>
+                        <li>Von dem eingenommenen Geld müssen die Steuern abgeführt werden. <span class="example">(Din banii încasați trebuie plătite taxele.)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/abfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- anführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.2 anführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a conduce (o echipă); a cita</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Als Mannschaftskapitän muss man seine Mannschaft anführen. <span class="example">(Ca căpitan, trebuie să-ți conduci echipa.)</span></li>
+                        <li>Sie führte mehrere Beispiele an. <span class="example">(Ea a citat mai multe exemple.)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/anfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- aufführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.3 aufführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a reprezenta (teatru); a enumera</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Das Theater führt ein neues Stück auf. <span class="example">(Teatrul prezintă o piesă nouă.)</span></li>
+                        <li>Sie führt alle Namen auf. <span class="example">(Ea enumeră toate numele.)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/auffuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- ausführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.4 ausführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a exporta; a executa</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Deutschland führt Autos aus. <span class="example">(Germania exportă mașini.)</span></li>
+                        <li>Der Plan muss ausgeführt werden. <span class="example">(Planul trebuie executat.)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/ausfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- durchführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.5 durchführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a efectua, a realiza</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Sie führt eine Studie durch. <span class="example">(Ea efectuează un studiu.)</span></li>
+                        <li>Diese Reparatur muss durchgeführt werden. <span class="example">(Această reparație trebuie efectuată.)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/durchfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- einführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.6 einführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a importa; a introduce</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Das Land führt Rohstoffe ein. <span class="example">(Țara importă materii prime.)</span></li>
+                        <li>Die neue Rechtschreibung wurde eingeführt. <span class="example">(Noua ortografie a fost introdusă.)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/einfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- fortführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.7 fortführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a continua</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Sie sucht jemanden, der das Projekt fortführen möchte. <span class="example">(Ea caută pe cineva care vrea să continue proiectul.)</span></li>
+                        <li>Die Tochter wird die Geschäfte fortführen. <span class="example">(Fiica va continua afacerile.)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/fortfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- irreführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.8 irreführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a induce în eroare, a înșela</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Er hat versucht, die Behörden irrezuführen. <span class="example">(El a încercat să inducă în eroare autoritățile.)</span></li>
+                        <li>Lassen Sie sich von ihm nicht irreführen! <span class="example">(Nu vă lăsați înșelați de el!)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/irrefuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- mitführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.9 mitführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a avea cu sine, a duce cu sine</p>
+                    <p><strong>Exemplu:</strong></p>
+                    <ul class="content-list">
+                        <li>Man muss immer einen Ausweis mitführen. <span class="example">(Trebuie să ai mereu actul de identitate la tine.)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/mitfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- vorführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.10 vorführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a prezenta, a demonstra</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Der Verkäufer führt das neue Modell vor. <span class="example">(Vânzătorul prezintă noul model.)</span></li>
+                        <li>Den Eltern wurde ein Film vorgeführt. <span class="example">(Părinților li s-a arătat un film.)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/vorfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- weiterführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.11 weiterführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a continua (mai departe)</p>
+                    <p><strong>Exemplu:</strong></p>
+                    <ul class="content-list">
+                        <li>Ich hoffe, dass unsere Kinder dieses Projekt weiterführen werden. <span class="example">(Sper că copiii noștri vor continua acest proiect.)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/weiterfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- zurückführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.12 zurückführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a atribui (unei cauze)</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Worauf ist dieses Verhalten zurückzuführen? <span class="example">(Care este cauza acestui comportament?)</span></li>
+                        <li>Die Proteste können auf die Preiserhöhung zurückgeführt werden. <span class="example">(Protestele pot fi atribuite creșterii prețurilor.)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/zurückfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- zusammenführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>3.13 zusammenführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a reuni, a aduna</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Das Erasmusprogramm führt viele junge Menschen zusammen. <span class="example">(Programul Erasmus reunește mulți tineri.)</span></li>
+                        <li>Die Geschwister wurden wieder zusammengeführt. <span class="example">(Frații au fost reuniți din nou.)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/zusammenfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- VERBE NESEPARABILE -->
+        <div class="section">
+            <div class="section-title">3. VERBE CU PREFIXE NESEPARABILE (3 verbe)</div>
+            <p style="margin-bottom: 20px;"><strong>Prefixele neseparabile</strong> rămân atașate de verb în toate formele și Perfekt se formează <strong>fără "ge-"</strong>.</p>
+
+            <!-- verführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>4.1 verführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a seduce, a ispiti</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Die Werbung verführt zum Kauf. <span class="example">(Reclama ispitește la cumpărare.)</span></li>
+                        <li>Lass dich nicht verführen! <span class="example">(Nu te lăsa ispitit!)</span></li>
+                    </ul>
+                    <p><strong>Perfekt:</strong> hat verführt (fără ge-!)</p>
+                    <button class="audio-btn" onclick="playAudio('audio/verfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- entführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>4.2 entführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a răpi, a kidnapa</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Der Geschäftsmann wurde entführt. <span class="example">(Omul de afaceri a fost răpit.)</span></li>
+                        <li>Das Flugzeug wurde entführt. <span class="example">(Avionul a fost deturnat.)</span></li>
+                    </ul>
+                    <p><strong>Perfekt:</strong> hat entführt (fără ge-!)</p>
+                    <button class="audio-btn" onclick="playAudio('audio/entfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- überführen -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>4.3 überführen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Sensuri:</strong> a dovedi (vinovăția); a transfera</p>
+                    <p><strong>Exemple:</strong></p>
+                    <ul class="content-list">
+                        <li>Die Betrügerin wurde überführt. <span class="example">(Escroca a fost dovedită vinovată.)</span></li>
+                        <li>Er wurde des Diebstahls überführt. <span class="example">(A fost dovedit vinovat de furt.)</span></li>
+                    </ul>
+                    <p><strong>Perfekt:</strong> hat überführt (fără ge-!)</p>
+                    <button class="audio-btn" onclick="playAudio('audio/überfuehren.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUBSTANTIVE ȘI ADJECTIVE -->
+        <div class="section">
+            <div class="section-title">4. SUBSTANTIVE ȘI ADJECTIVE</div>
+
+            <!-- Substantive -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>5.1 Substantive derivate (13 cuvinte)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p style="margin-bottom: 15px;"><strong>💡 Notă:</strong> Trage tabelul stânga-dreapta pentru a vedea toate coloanele pe mobile.</p>
+                    
+                    <div class="table-wrapper">
+                        <table>
+                            <tr>
+                                <th>Cuvânt (germană)</th>
+                                <th>Traducere (română)</th>
+                                <th>Exemplu (germană)</th>
+                                <th>Exemplu (română)</th>
+                            </tr>
+                            <tr>
+                                <td><strong>die Führung</strong></td>
+                                <td>conducerea</td>
+                                <td>Die Führung hat beschlossen, die Preise zu senken.</td>
+                                <td>Conducerea a decis să reducă prețurile.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>der Führer / die Führerin</strong></td>
+                                <td>ghidul / ghida</td>
+                                <td>Unsere Führerin zeigt uns die Altstadt.</td>
+                                <td>Ghida ne arată centrul vechi.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>der Führungsanspruch</strong></td>
+                                <td>pretenția la conducere / revendicarea de leadership</td>
+                                <td>Der Konzern erhebt Führungsanspruch auf dem europäischen Markt.</td>
+                                <td>Grupul revendică poziția de lider pe piața europeană.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>das Führerhaus</strong></td>
+                                <td>cabina șoferului (la camion/tractor)</td>
+                                <td>Im Führerhaus des LKW ist es sehr laut.</td>
+                                <td>În cabina camionului este foarte zgomotos.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>der Führerschein</strong></td>
+                                <td>permisul de conducere</td>
+                                <td>Ich mache gerade meinen Führerschein.</td>
+                                <td>Îmi iau acum permisul de conducere.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>die Geschäftsführerin</strong></td>
+                                <td>directoarea generală / administratoarea</td>
+                                <td>Die Geschäftsführerin unterschreibt den Vertrag.</td>
+                                <td>Directoarea generală semnează contractul.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>der Zugführer</strong></td>
+                                <td>șeful trenului / conductorul-șef</td>
+                                <td>Der Zugführer informiert die Fahrgäste über die Verspätung.</td>
+                                <td>Șeful trenului îi informează pe călători despre întârziere.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>der Reiseführer</strong></td>
+                                <td>ghid turistic (carte / persoană)</td>
+                                <td>Ich habe einen Reiseführer über Berlin gekauft.</td>
+                                <td>Am cumpărat un ghid turistic despre Berlin.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>der Tabellenführer</strong></td>
+                                <td>liderul clasamentului</td>
+                                <td>Unser Team ist Tabellenführer.</td>
+                                <td>Echipa noastră este liderul clasamentului.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>der Kranführer</strong></td>
+                                <td>macarangiul</td>
+                                <td>Der Kranführer arbeitet auf der Baustelle.</td>
+                                <td>Macarangiul lucrează pe șantier.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>die Verführung</strong></td>
+                                <td>seducția</td>
+                                <td>Die Verführung war zu groß.</td>
+                                <td>Ispita a fost prea mare.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>die Einführung</strong></td>
+                                <td>introducerea</td>
+                                <td>Die Einführung neuer Technologien ist wichtig.</td>
+                                <td>Introducerea de noi tehnologii este importantă.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>die Durchführung</strong></td>
+                                <td>realizarea</td>
+                                <td>Die Durchführung des Projekts war erfolgreich.</td>
+                                <td>Realizarea proiectului a fost cu succes.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <button class="audio-btn" onclick="playAudio('audio/substantive_derivate.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- Adjective -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>5.2 Adjective compuse (8 cuvinte)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p style="margin-bottom: 15px;"><strong>💡 Notă:</strong> Trage tabelul stânga-dreapta pentru a vedea toate coloanele pe mobile.</p>
+                    
+                    <div class="table-wrapper">
+                        <table>
+                            <tr>
+                                <th>Cuvânt (DE)</th>
+                                <th>Traducere (RO)</th>
+                                <th>Exemplu (DE)</th>
+                                <th>Exemplu (RO)</th>
+                            </tr>
+                            <tr>
+                                <td><strong>führend (leitend)</strong></td>
+                                <td>lider; de top; de conducere</td>
+                                <td>Das ist ein führendes Unternehmen in der Branche.</td>
+                                <td>Aceasta este o companie lider în domeniu.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>irreführend (täuschend)</strong></td>
+                                <td>înșelător; care induce în eroare; deceptiv</td>
+                                <td>Die Werbung ist irreführend und kann Kunden täuschen.</td>
+                                <td>Reclama este înșelătoare și poate induce clienții în eroare.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>zielführend (ergebnisorientiert)</strong></td>
+                                <td>orientat spre rezultat; util pentru atingerea scopului</td>
+                                <td>Diese Strategie ist zielführend, weil sie klare Schritte definiert.</td>
+                                <td>Strategia aceasta este orientată spre rezultat, pentru că definește pași clari.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>durchführbar (machbar)</strong></td>
+                                <td>fezabil; realizabil; posibil de pus în practică</td>
+                                <td>Der Plan ist durchführbar, wenn wir genug Zeit und Personal haben.</td>
+                                <td>Planul este realizabil dacă avem suficient timp și oameni.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>weiterführend (ergänzend)</strong></td>
+                                <td>suplimentar; complementar; pentru aprofundare</td>
+                                <td>Hier finden Sie weiterführende Informationen und Beispiele.</td>
+                                <td>Aici găsești informații suplimentare și exemple.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>goldführend</strong></td>
+                                <td>aurifer; cu conținut de aur</td>
+                                <td>In der Region gibt es goldführendes Gestein.</td>
+                                <td>În regiune există rocă auriferă.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>inhabergeführt</strong></td>
+                                <td>condus de proprietar (owner-managed)</td>
+                                <td>Das ist ein inhabergeführtes Familienunternehmen.</td>
+                                <td>Este o afacere de familie condusă de proprietar.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>verführerisch</strong></td>
+                                <td>ispititor; seducător; tentant</td>
+                                <td>Das Angebot klingt verführerisch, aber lies zuerst die Bedingungen.</td>
+                                <td>Oferta sună tentant, dar citește mai întâi condițiile.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <button class="audio-btn" onclick="playAudio('audio/adjective_compuse.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SINONIME ȘI ANTONIME -->
+        <div class="section">
+            <div class="section-title">5. SINONIME ȘI ANTONIME</div>
+
+            <!-- Sinonime -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>6.1 Sinonime</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p><strong>Pentru "a conduce":</strong></p>
+                    <ul class="content-list">
+                        <li>führen = <span class="german-text">leiten, lenken, dirigieren</span></li>
+                    </ul>
+                    <p><strong>Pentru "a realiza":</strong></p>
+                    <ul class="content-list">
+                        <li>durchführen = <span class="german-text">ausführen, realisieren</span></li>
+                    </ul>
+                    <p><strong>Pentru "a cita":</strong></p>
+                    <ul class="content-list">
+                        <li>anführen = <span class="german-text">zitieren, erwähnen</span></li>
+                    </ul>
+                    <p><strong>Pentru "a ispiti":</strong></p>
+                    <ul class="content-list">
+                        <li>verführen = <span class="german-text">verlocken, bezirzen</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/sinonime.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+
+            <!-- Antonime -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>6.2 Antonime</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul class="content-list">
+                        <li><span class="german-text">führen ≠ folgen</span> <span class="example">(a conduce ≠ a urma)</span></li>
+                        <li><span class="german-text">einführen ≠ ausführen</span> <span class="example">(a importa ≠ a exporta)</span></li>
+                        <li><span class="german-text">entführen ≠ befreien</span> <span class="example">(a răpi ≠ a elibera)</span></li>
+                        <li><span class="german-text">verführen ≠ abschrecken</span> <span class="example">(a ispiti ≠ a descuraja)</span></li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/antonime.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPRESII IDIOMATICE -->
+        <div class="section">
+            <div class="section-title">6. EXPRESII IDIOMATICE</div>
+
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>7. 10 Expresii cu "führen"</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul class="content-list">
+                        <li><span class="german-text">ein glückliches Leben führen</span> – a duce o viață fericită</li>
+                        <li><span class="german-text">Krieg führen</span> – a purta război</li>
+                        <li><span class="german-text">ein Gespräch führen</span> – a purta o conversație</li>
+                        <li><span class="german-text">Buch führen (über etwas)</span> – a ține evidența</li>
+                        <li><span class="german-text">zu einem Ergebnis führen</span> – a duce la un rezultat</li>
+                        <li><span class="german-text">in Versuchung führen</span> – a duce în ispită</li>
+                        <li><span class="german-text">an der Nase herumführen</span> – a duce de nas</li>
+                        <li><span class="german-text">sich gut/schlecht führen</span> – a se comporta bine/rău</li>
+                        <li><span class="german-text">den Vorsitz führen</span> – a prezida</li>
+                        <li><span class="german-text">das Wort führen</span> – a lua cuvântul</li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/expresii_idiomatice.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOMEN-VERB-VERBINDUNGEN -->
+        <div class="section">
+            <div class="section-title">7. NOMEN-VERB-VERBINDUNGEN</div>
+
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>8. Combinații Nomen-Verb</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul class="content-list">
+                        <li><span class="german-text">Aufsicht führen</span> = beaufsichtigen (a supraveghea)</li>
+                        <li><span class="german-text">Beschwerde führen</span> = sich beschweren (a se plânge oficial)</li>
+                        <li><span class="german-text">eine Diskussion führen</span> = diskutieren (a discuta)</li>
+                        <li><span class="german-text">etwas zu Ende führen</span> = beenden (a termina)</li>
+                        <li><span class="german-text">Protokoll führen</span> = protokollieren (a protocoliza)</li>
+                        <li><span class="german-text">Verhandlungen führen</span> = verhandeln (a negocia)</li>
+                        <li><span class="german-text">zum Erfolg führen</span> = erfolgreich sein (a avea succes)</li>
+                        <li><span class="german-text">in Führung liegen</span> = führen (a fi în frunte)</li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/nomen_verb_verbindung.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- REDEWENDUNGEN -->
+        <div class="section">
+            <div class="section-title">8. REDEWENDUNGEN (Expresii idiomatice avansate)</div>
+
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>9. 6 Expresii idiomatice avansate</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul class="content-list">
+                        <li><span class="german-text">etwas im Schilde führen</span> – a plănui ceva (în secret)</li>
+                        <li><span class="german-text">jemanden hinters Licht führen</span> – a păcăli pe cineva</li>
+                        <li><span class="german-text">jemandem etwas vor Augen führen</span> – a face pe cineva conștient de ceva</li>
+                        <li><span class="german-text">jemanden aufs Glatteis führen</span> – a induce în eroare</li>
+                        <li><span class="german-text">zu nichts führen</span> – a nu avea succes</li>
+                        <li><span class="german-text">zu weit führen</span> – a depăși limita acceptabilă</li>
+                    </ul>
+                    <button class="audio-btn" onclick="playAudio('audio/redewendungen.mp3')">🔊 Ascultă</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXERCIȚIUL 1 -->
+        <div id="ex1" class="section">
+            <div class="section-title">9. EXERCIȚII PRACTICE</div>
+
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>Exercițiul 1: Verbe cu prefixe</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="exercise-box">
+                        <p class="exercise-title">Completați cu verbul corect:</p>
+                        
+                        <div class="question">
+                            1. Die Polizei <input type="text" id="q1_1" class="input-field"> den Dieb <input type="text" id="q1_2" class="input-field">. (abführen)
+                        </div>
+                        
+                        <div class="question">
+                            2. Das Theater <input type="text" id="q2_1" class="input-field"> ein Stück <input type="text" id="q2_2" class="input-field">. (aufführen)
+                        </div>
+                        
+                        <div class="question">
+                            3. Sie <input type="text" id="q3_1" class="input-field"> das Projekt <input type="text" id="q3_2" class="input-field">. (fortführen)
+                        </div>
+                        
+                        <div class="question">
+                            4. Man muss einen Ausweis <input type="text" id="q4" class="input-field">. (mitführen)
+                        </div>
+                        
+                        <div class="question">
+                            5. Die Geschwister wurden <input type="text" id="q5" class="input-field">. (zusammenführen)
+                        </div>
+                        
+                        <button class="btn-check" onclick="checkExercise1()">✅ Verifică răspunsurile</button>
+                        <button class="btn-reset" onclick="resetExercise1()">🔄 Resetează exercițiul</button>
+                        
+                        <div id="feedback1" class="feedback"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>Exercițiul 2: Nomen-Verb-Verbindungen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="exercise-box">
+                        <p class="exercise-title">Completați cu substantivul corect:</p>
+                        
+                        <div class="question">
+                            1. Bei der Prüfung <input type="text" id="q6" class="input-field"> führen. (Aufsicht)
+                        </div>
+                        
+                        <div class="question">
+                            2. Eine <input type="text" id="q7" class="input-field"> führen. (Diskussion)
+                        </div>
+                        
+                        <div class="question">
+                            3. <input type="text" id="q8" class="input-field"> führen. (Protokoll)
+                        </div>
+                        
+                        <div class="question">
+                            4. Etwas zu <input type="text" id="q9" class="input-field"> führen. (Ende)
+                        </div>
+                        
+                        <div class="question">
+                            5. Zum <input type="text" id="q10" class="input-field"> führen. (Erfolg)
+                        </div>
+                        
+                        <button class="btn-check" onclick="checkExercise2()">✅ Verifică răspunsurile</button>
+                        <button class="btn-reset" onclick="resetExercise2()">🔄 Resetează exercițiul</button>
+                        
+                        <div id="feedback2" class="feedback"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXERCIȚIUL 3 -->
+        <div id="ex3" class="section">
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>Exercițiul 3: Redewendungen</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="exercise-box">
+                        <p class="exercise-title">Completați expresiile:</p>
+                        
+                        <div class="question">
+                            1. Er hat etwas <input type="text" id="q11" class="input-field"> <input type="text" id="q11b" class="input-field"> geführt. (im Schilde)
+                        </div>
+                        
+                        <div class="question">
+                            2. Sie führte ihn <input type="text" id="q12" class="input-field"> Licht. (hinters)
+                        </div>
+                        
+                        <div class="question">
+                            3. Das wird <input type="text" id="q13" class="input-field"> nichts führen. (zu)
+                        </div>
+                        
+                        <div class="question">
+                            4. Man muss sich das <input type="text" id="q14" class="input-field"> Augen führen. (vor)
+                        </div>
+                        
+                        <div class="question">
+                            5. Das würde zu <input type="text" id="q15" class="input-field"> führen. (weit)
+                        </div>
+                        
+                        <button class="btn-check" onclick="checkExercise3()">✅ Verifică răspunsurile</button>
+                        <button class="btn-reset" onclick="resetExercise3()">🔄 Resetează exercițiul</button>
+                        
+                        <div id="feedback3" class="feedback"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scroll to top button -->
+    <button id="scrollToTop" class="scroll-top-btn">↑</button>
+
+    <script>
+        // Toggle dropdown
+        function toggleDropdown(header) {
+            const content = header.nextElementSibling;
+            const isActive = content.classList.contains('active');
+            
+            // Close all dropdowns
+            document.querySelectorAll('.dropdown-content').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.querySelectorAll('.dropdown-header').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Open clicked dropdown if it wasn't active
+            if (!isActive) {
+                content.classList.add('active');
+                header.classList.add('active');
+            }
+        }
+
+        // Play audio
+        function playAudio(audioFile) {
+            const audio = new Audio(audioFile);
+            audio.play().catch(error => {
+                console.error('Audio play error:', error);
+                alert('⚠️ Audio nu poate fi redat local. \n\n✅ SOLUȚIE: Încarcă pe GitHub Pages sau rulează un server local.\n\nComandă: python -m http.server 8000');
+            });
+        }
+
+        // Scroll to section
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // Download PDF (placeholder)
+        function downloadPDF() {
+            window.location.href = 'Verbul_FUHREN_Lectie.pdf';
+        }
+
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+        
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Exercise 1 - Check answers
+        function checkExercise1() {
+            const answers = {
+                q1_1: 'führt',
+                q1_2: 'ab',
+                q2_1: 'führt',
+                q2_2: 'auf',
+                q3_1: 'führt',
+                q3_2: 'fort',
+                q4: 'mitführen',
+                q5: 'zusammengeführt'
+            };
+            
+            let correct = 0;
+            let total = Object.keys(answers).length;
+            
+            for (let id in answers) {
+                const input = document.getElementById(id);
+                const userAnswer = input.value.trim().toLowerCase();
+                const correctAnswer = answers[id].toLowerCase();
+                
+                if (userAnswer === correctAnswer) {
+                    input.style.borderColor = '#10b981';
+                    input.style.background = '#d1fae5';
+                    correct++;
+                } else {
+                    input.style.borderColor = '#ef4444';
+                    input.style.background = '#fee2e2';
+                }
+            }
+            
+            const feedback = document.getElementById('feedback1');
+            if (correct === total) {
+                feedback.className = 'feedback correct';
+                feedback.textContent = `✅ Excelent! Toate răspunsurile sunt corecte! (${correct}/${total})`;
+            } else {
+                feedback.className = 'feedback incorrect';
+                feedback.textContent = `❌ Ai ${correct} din ${total} răspunsuri corecte. Încearcă din nou!`;
+            }
+        }
+
+        function resetExercise1() {
+            const ids = ['q1_1', 'q1_2', 'q2_1', 'q2_2', 'q3_1', 'q3_2', 'q4', 'q5'];
+            ids.forEach(id => {
+                const input = document.getElementById(id);
+                input.value = '';
+                input.style.borderColor = '#10b981';
+                input.style.background = 'white';
+            });
+            document.getElementById('feedback1').style.display = 'none';
+        }
+
+        // Exercise 2 - Check answers
+        function checkExercise2() {
+            const answers = {
+                q6: 'Aufsicht',
+                q7: 'Diskussion',
+                q8: 'Protokoll',
+                q9: 'Ende',
+                q10: 'Erfolg'
+            };
+            
+            let correct = 0;
+            let total = Object.keys(answers).length;
+            
+            for (let id in answers) {
+                const input = document.getElementById(id);
+                const userAnswer = input.value.trim();
+                const correctAnswer = answers[id];
+                
+                if (userAnswer === correctAnswer) {
+                    input.style.borderColor = '#10b981';
+                    input.style.background = '#d1fae5';
+                    correct++;
+                } else {
+                    input.style.borderColor = '#ef4444';
+                    input.style.background = '#fee2e2';
+                }
+            }
+            
+            const feedback = document.getElementById('feedback2');
+            if (correct === total) {
+                feedback.className = 'feedback correct';
+                feedback.textContent = `✅ Excelent! Toate răspunsurile sunt corecte! (${correct}/${total})`;
+            } else {
+                feedback.className = 'feedback incorrect';
+                feedback.textContent = `❌ Ai ${correct} din ${total} răspunsuri corecte. Încearcă din nou!`;
+            }
+        }
+
+        function resetExercise2() {
+            const ids = ['q6', 'q7', 'q8', 'q9', 'q10'];
+            ids.forEach(id => {
+                const input = document.getElementById(id);
+                input.value = '';
+                input.style.borderColor = '#10b981';
+                input.style.background = 'white';
+            });
+            document.getElementById('feedback2').style.display = 'none';
+        }
+
+        // Exercise 3 - Check answers
+        function checkExercise3() {
+            const answers = {
+                q11: 'im',
+                q11b: 'Schilde',
+                q12: 'hinters',
+                q13: 'zu',
+                q14: 'vor',
+                q15: 'weit'
+            };
+            
+            let correct = 0;
+            let total = Object.keys(answers).length;
+            
+            for (let id in answers) {
+                const input = document.getElementById(id);
+                const userAnswer = input.value.trim();
+                const correctAnswer = answers[id];
+                
+                if (userAnswer === correctAnswer) {
+                    input.style.borderColor = '#10b981';
+                    input.style.background = '#d1fae5';
+                    correct++;
+                } else {
+                    input.style.borderColor = '#ef4444';
+                    input.style.background = '#fee2e2';
+                }
+            }
+            
+            const feedback = document.getElementById('feedback3');
+            if (correct === total) {
+                feedback.className = 'feedback correct';
+                feedback.textContent = `✅ Excelent! Toate răspunsurile sunt corecte! (${correct}/${total})`;
+            } else {
+                feedback.className = 'feedback incorrect';
+                feedback.textContent = `❌ Ai ${correct} din ${total} răspunsuri corecte. Încearcă din nou!`;
+            }
+        }
+
+        function resetExercise3() {
+            const ids = ['q11', 'q11b', 'q12', 'q13', 'q14', 'q15'];
+            ids.forEach(id => {
+                const input = document.getElementById(id);
+                input.value = '';
+                input.style.borderColor = '#10b981';
+                input.style.background = 'white';
+            });
+            document.getElementById('feedback3').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
